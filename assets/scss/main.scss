@@ -1,0 +1,22 @@
+// 1. abstracts
+
+
+// 2. vendor
+@import "vendor/bootstrap-5.3.0/bootstrap.scss";
+
+// 3. base
+
+
+// 4. layout
+@import "layout/navbar";
+@import "layout/chat";
+
+// 5. components
+@import "components/title";
+@import "components/buttonSearch";
+@import "components/buttonInclude";
+@import "components/buttonConvRecientes";
+// 6. pages
+
+
+// 7. themes

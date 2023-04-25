@@ -1,0 +1,33 @@
+.chat{
+margin: 0px 40px 40px 40px;
+height: 800px;
+}
+
+.card{
+    height: 700px;
+    overflow-y: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+.card-header{
+    margin-bottom: 10px;
+}
+
+.video_cam{
+    &--video{
+        margin-left: 20px;
+    }
+    &--phone{
+        margin-left: 10px;
+
+    }
+}
+.imgPerfil{
+    transition: width 0.5s ease-in-out;
+    &:hover{
+        width: 80px;
+    }
+}

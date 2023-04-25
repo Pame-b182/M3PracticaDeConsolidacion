@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/51d35e7ec0.js" crossorigin="anonymous"></script>
+    <title>Chat Vendedores y Soporte</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-info" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Icon</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Preguntas Frecuentes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Manuales y Tutoriales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Calendario</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Administración Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Organigrama Empresa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Chat Vendedores y Soporte</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> <!-- Fin Navbar -->
+    <!-- Título -->
+    <div class="title text-info">
+        <h4 class="title__h4">Chat para Vendedores y Equipo de Soporte</h4>
+        <hr>
+    </div> <!-- Fin Título -->
+    <!-- Chat -->
+    <section class="chat bg-info">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-10 mx-auto">
+                    <div class="card" id="chat3" style="border-radius: 15px;">
+                        <div class="card-body">
+                            <div class="row">
+                                <p class="d-md-none d-grid gap-2">
+                                    <button id="buttonConvRecientes" class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                      Conversaciones Recientes
+                                    </button>
+                                  </p>
+                                  <div class="collapse" id="collapseExample">
+                                    <div class="card card-body">
+                                      
+                                        <div class="col-md-6 col-lg-5 col-xl-4 mb-4 mb-md-0">
+                                            <div class="p-3">
+                                                <div class="chat-search-box">
+                                                    <div class="input-group">
+                                                        <input class="form-control" placeholder="Buscar conversación">
+                                                        <div class="input-group-btn">
+                                                            <button type="button" class="btn btn-info">
+                                                                <i class="fa fa-search"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+        
+                                                <div data-mdb-perfect-scrollbar="true" style="position: relative; height: 400px">
+                                                    <ul class="list-unstyled mb-0">
+                                                        <li class="p-2 border-bottom" onclick="ocultar('noLeido3')">
+                                                            <a href="#!" class="d-flex justify-content-between">
+                                                                <div class="d-flex flex-row">
+                                                                    <div>
+                                                                        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"
+                                                                            alt="avatar" class="imgPerfil d-flex align-self-center me-3"
+                                                                            width="60">
+                                                                        <span class="badge bg-success badge-dot"></span>
+                                                                    </div>
+                                                                    <div class="pt-1">
+                                                                        <p class="fw-bold mb-0">Cindy Concha</p>
+                                                                        <p class="small text-muted">Hola, estás por ahí?</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="pt-1">
+                                                                    <p class="small text-muted mb-1">Ahora</p>
+                                                                    <span id="noLeido3" class="badge bg-danger rounded-pill float-end">3</span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="p-2 border-bottom" onclick="ocultar('noLeido4')">
+                                                            <a href="#!" class="d-flex justify-content-between">
+                                                                <div class="d-flex flex-row">
+                                                                    <div>
+                                                                        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava2-bg.webp"
+                                                                            alt="avatar" class="imgPerfil d-flex align-self-center me-3"
+                                                                            width="60">
+                                                                        <span class="badge bg-warning badge-dot"></span>
+                                                                    </div>
+                                                                    <div class="pt-1">
+                                                                        <p class="fw-bold mb-0">Dani Donoso</p>
+                                                                        <p class="small text-muted">where are you numquam et repellendus debitis, ex quia.</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="pt-1">
+                                                                    <p class="small text-muted mb-1"> 17:34 </p>
+                                                                    <span id="noLeido4" class="badge bg-danger rounded-pill float-end">2</span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="p-2 border-bottom">
+                                                            <a href="#!" class="d-flex justify-content-between">
+                                                                <div class="d-flex flex-row">
+                                                                    <div>
+                                                                        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
+                                                                            alt="avatar" class="imgPerfil d-flex align-self-center me-3"
+                                                                            width="60">
+                                                                        <span class="badge bg-success badge-dot"></span>
+                                                                    </div>
+                                                                    <div class="pt-1">
+                                                                        <p class="fw-bold mb-0">Esteban García</p>
+                                                                        <p class="small text-muted">Ideleniti natus sunt reiciendis, expedita dolore dicta ab.</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="pt-1">
+                                                                    <p class="small text-muted mb-1">Ayer</p>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="p-2 border-bottom">
+                                                            <a href="#!" class="d-flex justify-content-between">
+                                                                <div class="d-flex flex-row">
+                                                                    <div>
+                                                                        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava4-bg.webp"
+                                                                            alt="avatar" class="imgPerfil d-flex align-self-center me-3"
+                                                                            width="60">
+                                                                        <span class="badge bg-danger badge-dot"></span>
+                                                                    </div>
+                                                                    <div class="pt-1">
+                                                                        <p class="fw-bold mb-0">Lorena Yoga</p>
+                                                                        <p class="small text-muted">Constetur adiping Ad officiis exercitationem laudantium...</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="pt-1">
+                                                                    <p class="small text-muted mb-1">22/04</p>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li class="p-2 border-bottom">
+                                                            <a href="#!" class="d-flex justify-content-between">
+                                                                <div class="d-flex flex-row">
+                                                                    <div>
+                                                                        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava5-bg.webp"
+                                                                            alt="avatar" class="imgPerfil d-flex align-self-center me-3"
+                                                                            width="60">
+                                                                        <span class="badge bg-warning badge-dot"></span>
+                                                                    </div>
+                                                                    <div class="pt-1">
+                                                                        <p class="fw-bold mb-0">More Perez</p>
+                                                                        <p class="small text-muted">Lorem ipsum dolo...</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="pt-1">
+                                                                    <p class="small text-muted mb-1">21/04</p>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+        
+                                            </div>
+        
+                                        </div>
+
+                                    </div>
+                                  </div>
+                                <div class="col-md-6 col-lg-5 col-xl-4 mb-4 mb-md-0 d-none d-md-block">
+                                    <div class="p-3">
+                                        <div class="chat-search-box">
+                                            <div class="input-group">
+                                                <input class="form-control" placeholder="Buscar conversación">
+                                                <div class="input-group-btn">
+                                                    <button type="button" class="btn btn-info">
+                                                        <i class="fa fa-search"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div data-mdb-perfect-scrollbar="true" style="position: relative; height: 400px">
+                                            <ul class="list-unstyled mb-0">
+                                                <li class="p-2 border-bottom" onclick="ocultar('noLeido1')">
+                                                    <a href="#!" class="d-flex justify-content-between">
+                                                        <div class="d-flex flex-row">
+                                                            <div>
+                                                                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"
+                                                                    alt="avatar" class="imgPerfil d-flex align-self-center me-3"
+                                                                    width="60">
+                                                                <span class="badge bg-success badge-dot"></span>
+                                                            </div>
+                                                            <div class="pt-1">
+                                                                <p class="fw-bold mb-0">Cindy Concha</p>
+                                                                <p class="small text-muted">Hola, estás por ahí?</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="pt-1">
+                                                            <p class="small text-muted mb-1">Ahora</p>
+                                                            <span id="noLeido1" class="badge bg-danger rounded-pill float-end">3</span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="p-2 border-bottom" onclick="ocultar('noLeido2')">
+                                                    <a href="#!" class="d-flex justify-content-between">
+                                                        <div class="d-flex flex-row">
+                                                            <div>
+                                                                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava2-bg.webp"
+                                                                    alt="avatar" class="imgPerfil d-flex align-self-center me-3"
+                                                                    width="60">
+                                                                <span class="badge bg-warning badge-dot"></span>
+                                                            </div>
+                                                            <div class="pt-1">
+                                                                <p class="fw-bold mb-0">Dani Donoso</p>
+                                                                <p class="small text-muted">where are you numquam et repellendus debitis, ex quia.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="pt-1">
+                                                            <p class="small text-muted mb-1"> 17:34 </p>
+                                                            <span id="noLeido2" class="badge bg-danger rounded-pill float-end">2</span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="p-2 border-bottom">
+                                                    <a href="#!" class="d-flex justify-content-between">
+                                                        <div class="d-flex flex-row">
+                                                            <div>
+                                                                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
+                                                                    alt="avatar" class="imgPerfil d-flex align-self-center me-3"
+                                                                    width="60">
+                                                                <span class="badge bg-success badge-dot"></span>
+                                                            </div>
+                                                            <div class="pt-1">
+                                                                <p class="fw-bold mb-0">Esteban García</p>
+                                                                <p class="small text-muted">Ideleniti natus sunt reiciendis, expedita dolore dicta ab.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="pt-1">
+                                                            <p class="small text-muted mb-1">Ayer</p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="p-2 border-bottom">
+                                                    <a href="#!" class="d-flex justify-content-between">
+                                                        <div class="d-flex flex-row">
+                                                            <div>
+                                                                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava4-bg.webp"
+                                                                    alt="avatar" class="imgPerfil d-flex align-self-center me-3"
+                                                                    width="60">
+                                                                <span class="badge bg-danger badge-dot"></span>
+                                                            </div>
+                                                            <div class="pt-1">
+                                                                <p class="fw-bold mb-0">Lorena Yoga</p>
+                                                                <p class="small text-muted">Constetur adiping Ad officiis exercitationem laudantium...</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="pt-1">
+                                                            <p class="small text-muted mb-1">22/04</p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="p-2 border-bottom">
+                                                    <a href="#!" class="d-flex justify-content-between">
+                                                        <div class="d-flex flex-row">
+                                                            <div>
+                                                                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava5-bg.webp"
+                                                                    alt="avatar" class="imgPerfil d-flex align-self-center me-3"
+                                                                    width="60">
+                                                                <span class="badge bg-warning badge-dot"></span>
+                                                            </div>
+                                                            <div class="pt-1">
+                                                                <p class="fw-bold mb-0">More Perez</p>
+                                                                <p class="small text-muted">Lorem ipsum dolo...</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="pt-1">
+                                                            <p class="small text-muted mb-1">21/04</p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-md-6 col-lg-7 col-xl-8">
+                                    <div class="pt-3 pe-3" data-mdb-perfect-scrollbar="true"
+                                        style="position: relative; height: 400px">
+                                        <div class="card-header msg_head">
+                                            <div class="d-flex bd-highlight">
+                                                <div class="img_cont">
+                                                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"
+                                                    alt="avatar" class="d-flex align-self-center me-3"
+                                                    width="60">
+                                                    <span class="online_icon"></span>
+                                                </div>
+                                                <div class="user_info">
+                                                    <span class="fw-bold mb-0">Cindy Concha</span>
+                                                    <p class="small text-muted text-secondary">1767 Mensajes</p>
+                                                </div>
+                                                <div class="video_cam">
+                                                    <span><i class="video_cam--video fas fa-video text-info"></i></span>
+                                                    <span><i class="video_cam--phone fas fa-phone text-info"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex flex-row justify-content-start conv1">
+                                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava6-bg.webp"
+                                                alt="avatar 1" style="width: 45px; height: 100%;">
+                                            <div>
+                                                <p class="small p-2 ms-3 mb-1 rounded-3"
+                                                    style="background-color: #f5f6f7;">
+                                                    Lorem ipsu dolor sit amet, consectetur adipiscing elit, sed do
+                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                <p class="small ms-3 mb-3 rounded-3 text-muted float-end">12:00 PM | 24
+                                                    Abril</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex flex-row justify-content-end">
+                                            <div>
+                                                <p class="small p-2 me-3 mb-1 text-white rounded-3 bg-primary">
+                                                    Ut enim ad minim veniam, nostrud exercitation ullamco laboris nisi
+                                                    ut aliquip.
+                                                </p>
+                                                <p class="small me-3 mb-3 rounded-3 text-muted">12:02 PM | 24 Abril</p>
+                                            </div>
+                                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"
+                                                alt="avatar 1" style="width: 45px; height: 100%;">
+                                        </div>
+
+                                        <div class="d-flex flex-row justify-content-start">
+                                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava6-bg.webp"
+                                                alt="avatar 1" style="width: 45px; height: 100%;">
+                                            <div>
+                                                <p class="small p-2 ms-3 mb-1 rounded-3"
+                                                    style="background-color: #f5f6f7;">
+                                                    Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                                    cillum dolore eu fugiat nulla pariatur.
+                                                </p>
+                                                <p class="small ms-3 mb-3 rounded-3 text-muted float-end">12:07 PM | 24
+                                                    Abril</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex flex-row justify-content-end">
+                                            <div>
+                                                <p class="small p-2 me-3 mb-1 text-white rounded-3 bg-primary">
+                                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                                    officia deserunt mollit anim id est laborum.</p>
+                                                <p class="small me-3 mb-3 rounded-3 text-muted">12:20 PM | 24 Abril</p>
+                                            </div>
+                                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"
+                                                alt="avatar 1" style="width: 45px; height: 100%;">
+                                        </div>
+
+                                        <div class="d-flex flex-row justify-content-start">
+                                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava6-bg.webp"
+                                                alt="avatar 1" style="width: 45px; height: 100%;">
+                                            <div>
+                                                <p class="small p-2 ms-3 mb-1 rounded-3"
+                                                    style="background-color: #f5f6f7;">
+                                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                                    accusantium doloremque laudantium, totam
+                                                </p>
+                                                <p class="small ms-3 mb-3 rounded-3 text-muted float-end">12:21 PM | 24
+                                                    Abril</p>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="text-muted d-flex justify-content-start align-items-center pe-3 pt-3 mt-2">
+                                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava6-bg.webp"
+                                                alt="avatar 3" style="width: 40px; height: 100%;">
+                                            <input type="text" class="form-control form-control-lg"
+                                                id="exampleFormControlInput2" placeholder="Escribir mensaje">
+                                                <a class="ms-3 text-info" href="#!"><i class="fas fa-paper-plane"></i></a>
+                                            <!-- Dropdown clip -->
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn__include btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <a class="text-muted" href="#!"><i class="fas fa-paperclip"></i></a>
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item text-muted" href="#"><i class="fas fa-smile"></i></a></li>
+                                                    <li><a class="dropdown-item text-muted" href="#"><i class="fa-regular fa-image"></i></a></li>
+                                                    <li><a class="dropdown-item text-muted" href="#"><i class="fa-regular fa-file"></i></a></li>
+                                                    <li><a class="dropdown-item text-muted" href="#"><i class="fa-solid fa-location-dot"></i></a></li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section> <!-- Fin Chat -->
+    <script src="assets/js/bootstrap-5.3.0/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
